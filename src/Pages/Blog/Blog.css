@@ -1,0 +1,87 @@
+.BlogHero{
+    padding: 140px 0 140px;
+    background: linear-gradient(290deg, #ffffff 0%, #007bff 20%, #000509 65%);
+    color:#fff;
+}
+
+.SectionBadge{
+    display:inline-block; 
+    padding:6px 14px; 
+    border-radius:999px;
+    font-size:.85rem; 
+    font-weight:500;
+    background:rgba(13,110,253,.12); 
+    color:#0d6efd;
+}
+
+.BlogTitle{ 
+    font-size:52px; 
+    font-weight:600; 
+    margin:8px 0; 
+}
+
+.BlogSubtitle{ 
+    color:#aeb7c7; 
+    margin:0; 
+}
+
+.BlogBody{ 
+    padding:64px 0; 
+    background:#E8F4FF; 
+}
+
+.BlogCard{
+    border:0; 
+    border-radius:18px; 
+    background:#fff; 
+    padding:24px; 
+    box-shadow: 0 0 16px #00000010;
+    width: 49%;
+    margin-bottom: 20px;
+}
+
+.BlogRow {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0 20px;
+}
+
+.BlogThumb{
+    width:160px; 
+    height:120px; 
+    border-radius:18px; 
+    overflow:hidden; 
+    margin:12px;
+    background:#0a0f1c;
+}
+
+.BlogThumb img{ 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    display:block; 
+}
+
+.BlogBadge{
+    border-radius:999px; padding:6px 12px;
+    margin-bottom: 8px;
+    border: 1px solid #007bff;
+    width: fit-content;
+}
+
+.BlogCardBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.BlogColBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+    .BlogCard{
+        width: 100%;
+    }
+}

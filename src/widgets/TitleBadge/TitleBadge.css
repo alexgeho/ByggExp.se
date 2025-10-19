@@ -1,0 +1,125 @@
+.badge-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  --border-radius: 24px;
+  --padding: 4px;
+  --transition: 0.4s;
+  --button-color: #101010;
+  --highlight-color-hue: 210deg;
+
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  padding: 8px 18px;
+  font-size: 1em;
+  font-weight: 400;
+  width: fit-content;
+
+  background-color: var(--button-color);
+
+  box-shadow:
+    inset 0px 1px 1px #0785F470,
+    inset 0px 2px 2px #0785F450,
+    inset 0px 4px 4px #0785F430,
+    inset 0px 8px 8px #0785F420,
+    inset 0px 16px 16px #0785F410,
+    0px -1px 1px #0785F405,
+    0px -2px 2px rgba(0, 0, 0, 0.03),
+    0px -4px 4px rgba(0, 0, 0, 0.05),
+    0px -8px 8px rgba(0, 0, 0, 0.06),
+    0px -16px 16px rgba(0, 0, 0, 0.08);
+
+  border: solid 1px #1A3247;
+  border-radius: var(--border-radius);
+
+  transition:
+    box-shadow var(--transition),
+    border var(--transition),
+    background-color var(--transition);
+}
+
+.badge-letter {
+  position: relative;
+  display: inline-block;
+  color: #fff5;
+  white-space: pre;
+  animation: letter-anim 2s ease-in-out infinite;
+  transition:
+    color var(--transition),
+    text-shadow var(--transition),
+    opacity var(--transition);
+}
+
+@keyframes letter-anim {
+  50% {
+    text-shadow: 0 0 3px #fff8;
+    color: #fff;
+  }
+}
+
+.badge-svg {
+  flex-grow: 1;
+  height: 24px;
+  margin-right: 0.5rem;
+  fill: #e8e8e8;
+  animation: flicker 2s linear infinite;
+  animation-delay: 0.5s;
+  filter: drop-shadow(0 0 2px #fff9);
+  transition:
+    fill var(--transition),
+    filter var(--transition),
+    opacity var(--transition);
+}
+@keyframes flicker {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.txt-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 6.4em;
+  justify-content: center;
+}
+.txt-1,
+.txt-2 {
+  word-spacing: -1em;
+}
+.txt-1 {
+  animation: appear-anim 1s ease-in-out forwards;
+}
+.txt-2 {
+  opacity: 0;
+}
+@keyframes appear-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opacity-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes focused-letter-anim {
+  0%,
+  100% {
+    filter: blur(0px);
+  }
+  50% {
+    transform: scale(2);
+    filter: blur(10px) brightness(150%)
+      drop-shadow(-36px 12px 12px hsl(var(--highlight-color-hue), 100%, 70%));
+  }
+}
