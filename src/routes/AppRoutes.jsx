@@ -9,6 +9,7 @@ import Signup from "../Pages/Login/Signup";
 import About from "../Pages/About/About";
 import Faq from "../Pages/Faq/Faq";
 import ArticlePage from "../Pages/ArticlePage/ArticlePage";
+import Admin from "../Pages/Admin/Admin";
 
 export default function AppRoutes() {
     return (
@@ -23,9 +24,11 @@ export default function AppRoutes() {
             <Route path="/faq" element={<Faq />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<ArticlePage />} />
+            <Route path="/admin" element={<Admin />}/>
 
 
-            
+
+
 
 
         </Routes>
