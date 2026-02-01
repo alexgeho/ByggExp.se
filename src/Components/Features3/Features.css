@@ -1,0 +1,48 @@
+.Features {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Features .Title {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.Features .Subtitle {
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #b5c2d6;
+    line-height: 1.4;
+}
+
+.Features img {
+    height: 225px;
+}
+
+.TextWrapper {
+    width: 100%;
+    max-width: 390px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .Features .Title {
+        font-size: 2rem;
+    }
+
+    .Features .Subtitle {
+        font-size: 1.7rem;
+    }
+}

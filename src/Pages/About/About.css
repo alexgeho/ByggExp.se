@@ -1,0 +1,445 @@
+.container-custom {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-hero,
+.experience-section,
+.what-we-do-section,
+.principles-section,
+.testimonials-section {
+  padding: 60px 20px;
+}
+
+.badge-section.small {
+  font-size: 18px;
+  padding: 4px 18px;
+  background-color: #E8F4FF;
+  border-radius: 18px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a3c6e;
+  margin-bottom: 16px;
+}
+
+.section-title-white {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+
+/* HERO SECTION */
+.about-hero {
+  background: linear-gradient(290deg, #ffffff 0%, #007bff 20%, #000509 65%);
+  color: white;
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 60px 0 80px;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-image-wrapper {
+  width: 95vw;
+  border-radius: 60px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -100px;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.experience-section {
+  padding: 80px 20px 60px;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  margin-left: calc(-50vw + 50%);
+  width: 100vw;
+  margin-top: 100px;
+}
+
+.team-row {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.team-card {
+  width: 50%;
+  border: none;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.team-card .card-body {
+  padding: 20px;
+  background: #fff;
+  
+}
+
+.team-card h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1a3c6e;
+  margin-bottom: 8px;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+/* WHAT WE DO SECTION */
+.what-we-do-section {
+  background: linear-gradient(180deg, #ffffff 0%, #007bff 35%, #000509 55%);
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+  margin-bottom: 50px;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 20px;
+  width: 30%;
+}
+
+.feature-number {
+  font-size: 16rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1;
+  background: linear-gradient(180deg, #007bff 0%, #000000 70%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.feature-item h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .what-we-do-section {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-item-bottom {
+    grid-column: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .feature-item {
+    padding: 15px;
+  }
+}
+
+
+/* PRINCIPLES SECTION */
+.principles-section {
+  background: #fff;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.principles-image {
+  border-radius: 16px;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.principles-image img {
+  height: 100%;
+  display: block;
+}
+
+.principles-box {
+  height: 60vh;
+}
+
+.principles-list-shell {
+  height: 100%;
+}
+
+.principles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.principles-list li {
+  margin-bottom: 24px;
+  padding-left: 45px;
+  position: relative;
+}
+
+.principles-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.principles-list h6 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a3c6e;
+  margin-bottom: 8px;
+}
+
+.principles-list p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* TESTIMONIALS SECTION */
+.testimonials-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.testimonial-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  background: white;
+  padding: 36px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.testimonial-header .fw-semibold {
+  color: #1a3c6e;
+  font-size: 1.1rem;
+}
+
+.testimonial-header .text-muted {
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .what-we-do-section {
+    background: linear-gradient(180deg, #ffffff 0%, #007bff 10%, #000509 20%);
+  }
+
+  .features-grid {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .principles-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .principles-list-shell {
+    width: 100%;
+  }
+  
+  .principles-list {
+    gap: 26px;
+  }
+
+  .testimonial-shell {
+    flex-direction: column;
+  }
+
+  .testimonial-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .principles-list li {
+    padding-left: 20px;
+    margin-bottom: 45px;
+  }
+
+  .principles-list li:before {
+    left: -20px;
+  }
+
+  .container-custom {
+    padding: 0 15px;
+  }
+
+  .team-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero,
+  .experience-section,
+  .what-we-do-section,
+  .principles-section,
+  .testimonials-section {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-card {
+    padding: 20px 15px;
+  }
+
+  .team-card {
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,98 @@
+.ContactsHero{
+    padding: 140px 0 140px;
+    background: linear-gradient(290deg, #ffffff 0%, #007bff 20%, #000509 65%);
+    color:#fff;
+}
+
+.SectionContactsBadge{
+    display:inline-block; 
+    padding:6px 14px; 
+    border-radius:999px;
+    font-size:.85rem; 
+    font-weight:100;
+    background:rgba(13,110,253,.12); 
+    color:#0d6efd;
+    background-color: #ffffff;
+    width: fit-content;
+}
+
+.ContactsTitle{ 
+    font-size:42px; 
+    font-weight:600;
+    margin:8px 0; 
+}
+
+.ContactsSubtitle{ 
+    color:#aeb7c7; 
+    margin:0; 
+}
+
+.ContactsBody{ padding:32px 0; 
+    background:#E8F4FF; 
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.ContactCard{
+    border:0; 
+    border-radius:18px; 
+    background:#fff;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+}
+
+.ContactCard--blue{
+    background: linear-gradient(180deg,#0d6efd 0%, #0a57cb 100%);
+    color:#fff;
+    box-shadow: 0 12px 30px rgba(13,110,253,.25);
+}
+
+.text-card-muted{ 
+    color:#d8e6ff; 
+}
+
+.ContactList{ 
+    list-style:none; 
+    padding:0; 
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ContactList li{ 
+    margin-bottom:14px; 
+    font-weight:500; 
+}
+
+.MapWrapper{
+    border-radius:18px; 
+    overflow:hidden; 
+    background:#ccc; 
+    height:380px;
+}
+
+.MapWrapper iframe{ 
+    width:100%; 
+    height:100%; 
+    border:0; 
+    display:block; 
+}
+
+.ContactsMapSection {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 24px 0;
+    background-color: #E8F4FF;
+}
+
+@media screen and (max-width: 1200px) {
+    .ContactsBodyBox {
+        display: flex;
+        flex-direction: column;
+    }   
+    .ContactsBodyCol {
+        width: 100%;
+    }
+}

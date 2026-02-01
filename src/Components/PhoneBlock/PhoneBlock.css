@@ -1,0 +1,493 @@
+.PhoneBlock {
+    /* BACKGROUND AND MAIN PARAMETERS */
+    background: #ffffff;
+    /* ??? */
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    padding: 0 15px 0;
+    width: 100%;
+    max-width: 92vw;
+    margin: 10px auto;
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* === CONTENT === */
+.PhoneText {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.PhoneText>button {
+    width: fit-content;
+}
+
+.PhoneText h3 {
+    font-size: 1.4rem;
+    color: #052d50;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+}
+
+.PhoneText p {
+    font-size: 1.2rem;
+    color: #052d50;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* === BUTTON === */
+.btnCustom {
+    background: linear-gradient(90deg, #0785f4, #3da6ff);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 200;
+    padding: 13px 32px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 14px rgba(7, 133, 244, 0.25);
+}
+
+.btnCustom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(7, 133, 244, 0.35);
+}
+
+/* === WRAPPER PHONE IMG === */
+.PhoneImageWrapper {
+    width: auto;
+    height: 260px;
+    /* height of visible part */
+    overflow: hidden;
+    /* cutting img */
+    position: relative;
+    border-radius: 20px;
+}
+
+/* .PhoneImage {
+    position: absolute;             
+    width: 100%;
+    height: auto;
+    object-fit: cover;              
+    transition: transform 0.3s ease; 
+    left: 0;
+} */
+
+/* === ALTERNATIVES FOR PHONE MOVEMENT (NOT CUT, JUST MOVE) === */
+
+/* cropBottom */
+.cropBottom .PhoneImage {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    transform: translateY(0px);
+    transition: transform 0.3s ease;
+}
+
+/* cropTop */
+.cropTop .PhoneImage {
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    transform: translateY(-400px);
+    /* move up */
+    transition: transform 0.3s ease;
+}
+
+/* === LIGHT ANIMATION ON HOVERИ === */
+.PhoneImageWrapper:hover .PhoneImage {
+    transform: scale(1.015);
+}
+
+.reverse {
+    align-items: flex-start;
+}
+
+.unReverse {
+    align-items: flex-end;
+}
+
+
+/* MEDIA 550 PX */
+
+@media (min-width: 550px) {
+
+    .PhoneBlock {
+        background: #F7FCFF;
+        height: 280px;
+        overflow: hidden;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .PhoneText h3 {
+        font-size: 1.4rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        margin: 20px 0 10px;
+    }
+
+    .PhoneText p {
+        font-size: 1rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .btnCustom {
+        background: linear-gradient(90deg, #0785f4, #3da6ff);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 13px 32px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 0 14px rgba(7, 133, 244, 0.25);
+    }
+
+    .btnCustom:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(7, 133, 244, 0.35);
+    }
+
+    .PhoneImageWrapper {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* .PhoneImage {
+        position: absolute;             
+        height: auto;
+        object-fit: cover;             
+        transition: transform 0.3s ease;
+        left: 0;
+    } */
+
+    .cropBottom .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(10px);
+    }
+
+    .cropTop .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(-250px);
+    }
+
+    .PhoneImageWrapper:hover .PhoneImage {
+        transform: scale(1.015);
+    }
+}
+
+/* MEDIA 632 PX */
+
+@media (min-width: 632px) {
+    .cropBottom .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(10px);
+    }
+
+    .cropTop .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(-280px);
+    }
+}
+
+/* MEDIA 768 PX */
+
+@media (min-width: 768px) {
+    .PhoneBlock {
+        background: #F7FCFF;
+        height: 450px;
+        width: 80%;
+        overflow: hidden;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .PhoneText {
+        padding: 30px;
+        width: 70%;
+    }
+
+    .PhoneText h3 {
+        font-size: 2rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+    }
+
+    .PhoneText p {
+        font-size: 1.5rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .btnCustom {
+        background: linear-gradient(90deg, #0785f4, #3da6ff);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 13px 32px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 0 14px rgba(7, 133, 244, 0.25);
+    }
+
+    .btnCustom:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(7, 133, 244, 0.35);
+    }
+
+    .PhoneImageWrapper {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* .PhoneImage {
+        position: absolute;               
+        height: auto;
+        object-fit: cover;               
+        transition: transform 0.3s ease; 
+        left: 0;
+    } */
+
+    .cropBottom .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(30px);
+    }
+
+    .cropTop .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(-280px);
+    }
+
+    .PhoneImageWrapper:hover .PhoneImage {
+        transform: scale(1.015);
+    }
+}
+
+@media (min-width: 832px) {
+
+    .cropBottom .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(5%);
+    }
+
+    .cropTop .PhoneImage {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        transform: translateY(-45%);
+    }
+
+}
+
+
+/* MEDIA 992 PX */
+
+@media (min-width: 992px) {
+    .PhoneBlock {
+        background: #F7FCFF;
+        height: 380px;
+        overflow: hidden;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+
+    .PhoneText {
+        padding: 30px;
+        width: 70%;
+    }
+
+    .PhoneText h3 {
+        font-size: 2rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+    }
+
+    .PhoneText p {
+        font-size: 1.5rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .btnCustom {
+        background: linear-gradient(90deg, #0785f4, #3da6ff);
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 13px 32px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 0 14px rgba(7, 133, 244, 0.25);
+    }
+
+    .btnCustom:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(7, 133, 244, 0.35);
+    }
+
+    .PhoneImageWrapper {
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .PhoneImage {
+        position: absolute;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        left: 0;
+    }
+
+    .cropBottom .PhoneImage {
+        position: relative;
+        display: block;
+        width: 350px;
+        height: auto;
+        transform: translateY(100px);
+    }
+
+    .cropTop .PhoneImage {
+        position: relative;
+        display: block;
+        width: 350px;
+        height: auto;
+        transform: translateY(-400px);
+    }
+
+    .PhoneImageWrapper:hover .PhoneImage {
+        transform: scale(1.015);
+    }
+}
+
+/* MEDIA 1200 PX */
+
+@media (min-width: 1200px) {
+    .PhoneText h3 {
+        font-size: 2.1rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+    }
+
+    .PhoneText p {
+        font-size: 1.5rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .cropBottom .PhoneImage {
+        position: relative;
+        display: block;
+        width: 400px;
+        height: auto;
+        transform: translateY(90px);
+    }
+
+    .cropTop .PhoneImage {
+        position: relative;
+        display: block;
+        width: 400px;
+        height: auto;
+        transform: translateY(-480px);
+    }
+
+    .btnCustom {
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
+}
+
+/* MEDIA 1400 PX */
+
+@media (min-width: 1400px) {
+    .PhoneText h3 {
+        font-size: 2.8rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+    }
+
+    .PhoneText p {
+        font-size: 2rem;
+        color: #052d50;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .btnCustom {
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
+}
