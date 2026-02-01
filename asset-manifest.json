@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ByggExp.se/static/css/main.2d0569ab.css",
+    "main.js": "/ByggExp.se/static/js/main.e6a45a4e.js",
+    "static/js/426.e362d75d.chunk.js": "/ByggExp.se/static/js/426.e362d75d.chunk.js",
+    "static/media/bg1.jpg": "/ByggExp.se/static/media/bg1.95c5e22f0b35ec78506f.jpg",
+    "static/media/post-inline.eps": "/ByggExp.se/static/media/post-inline.8b8722eb6e5dd44f3784.eps",
+    "static/media/post-cover.jpg": "/ByggExp.se/static/media/post-cover.e4e2ce558494f4d5b5a9.jpg",
+    "static/media/p3.png": "/ByggExp.se/static/media/p3.9d038c3141662612b0d7.png",
+    "static/media/values.jpg": "/ByggExp.se/static/media/values.ac19c5432d40ccf94163.jpg",
+    "static/media/p4.png": "/ByggExp.se/static/media/p4.2bc9497f4738dbda9eb6.png",
+    "static/media/p2.png": "/ByggExp.se/static/media/p2.0576703cbe0bd54a6e86.png",
+    "static/media/p1.png": "/ByggExp.se/static/media/p1.337a5f0964fae6657639.png",
+    "static/media/p5.png": "/ByggExp.se/static/media/p5.f9ec0a8baf44d197c1aa.png",
+    "static/media/bgB.png": "/ByggExp.se/static/media/bgB.efca0f3f16fa704a98ae.png",
+    "static/media/bgH.png": "/ByggExp.se/static/media/bgH.507b3dd7303e9c7e6327.png",
+    "static/media/logo.png": "/ByggExp.se/static/media/logo.f8a521102ed7f562d09d.png",
+    "static/media/3.svg": "/ByggExp.se/static/media/3.7746580d2d88ac238915876292b2a3e0.svg",
+    "index.html": "/ByggExp.se/index.html",
+    "static/media/2.svg": "/ByggExp.se/static/media/2.bb72c3615a8dc52ccea453138c04187f.svg",
+    "static/media/1.svg": "/ByggExp.se/static/media/1.e2b83f70411f63a2e52ac48cdd2eca01.svg",
+    "static/media/checkmark.svg": "/ByggExp.se/static/media/checkmark.a5913c38d7e2d10deb1d225ee8409d0b.svg",
+    "main.2d0569ab.css.map": "/ByggExp.se/static/css/main.2d0569ab.css.map",
+    "main.e6a45a4e.js.map": "/ByggExp.se/static/js/main.e6a45a4e.js.map",
+    "426.e362d75d.chunk.js.map": "/ByggExp.se/static/js/426.e362d75d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d0569ab.css",
+    "static/js/main.e6a45a4e.js"
+  ]
+}
