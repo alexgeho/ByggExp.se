@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ByggExp.se/static/css/main.2d0569ab.css",
-    "main.js": "/ByggExp.se/static/js/main.e6a45a4e.js",
+    "main.js": "/ByggExp.se/static/js/main.7b4b5dcf.js",
     "static/js/426.e362d75d.chunk.js": "/ByggExp.se/static/js/426.e362d75d.chunk.js",
     "static/media/bg1.jpg": "/ByggExp.se/static/media/bg1.95c5e22f0b35ec78506f.jpg",
     "static/media/post-inline.eps": "/ByggExp.se/static/media/post-inline.8b8722eb6e5dd44f3784.eps",
@@ -21,11 +21,11 @@
     "static/media/1.svg": "/ByggExp.se/static/media/1.e2b83f70411f63a2e52ac48cdd2eca01.svg",
     "static/media/checkmark.svg": "/ByggExp.se/static/media/checkmark.a5913c38d7e2d10deb1d225ee8409d0b.svg",
     "main.2d0569ab.css.map": "/ByggExp.se/static/css/main.2d0569ab.css.map",
-    "main.e6a45a4e.js.map": "/ByggExp.se/static/js/main.e6a45a4e.js.map",
+    "main.7b4b5dcf.js.map": "/ByggExp.se/static/js/main.7b4b5dcf.js.map",
     "426.e362d75d.chunk.js.map": "/ByggExp.se/static/js/426.e362d75d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d0569ab.css",
-    "static/js/main.e6a45a4e.js"
+    "static/js/main.7b4b5dcf.js"
   ]
 }
