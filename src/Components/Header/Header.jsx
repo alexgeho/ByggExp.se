@@ -93,10 +93,10 @@ const Header = () => {
                     <Link to="/" className="navbar-brand d-flex align-items-center">
                         <img
                             src={logo}
-                            width="205"
-                            height="56"
+                            width="405"
+                            height="156"
                             className="d-inline-block align-top logo-img"
-                            alt="ByggHub Logo"
+                            alt="ByggExp Logo"
                         />
                     </Link>
 
