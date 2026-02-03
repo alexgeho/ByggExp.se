@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
-import logo from '../../img/logo.png';
+import logo from '../../img/logo.svg';
 import { useLocation } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
 import './Header.css';
