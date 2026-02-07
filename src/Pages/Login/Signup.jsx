@@ -4,8 +4,7 @@ import "./Login.css"; // можно использовать тот же сти�
 
 export default function Signup() {
     const [formData, setFormData] = useState({
-        firstName: "",
-        lastName: "",
+        name: "",
         company: "",
         phone: "",
         email: "",
@@ -16,10 +15,20 @@ export default function Signup() {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("New registration:", formData);
-        // Здесь будет логика отправки данных (например, в Firebase или API)
+
+        await fetch('http://localhost:3000/auth/register', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                password: formData.password,
+            }),
+        });
+
+        alert('User created');
     };
 
     return (
@@ -36,26 +45,27 @@ export default function Signup() {
                                         <Form.Group controlId="formFirstName" className="mb-3">
                                             <Form.Control
                                                 type="text"
-                                                name="firstName"
-                                                placeholder="First name"
-                                                value={formData.firstName}
+                                                name="name"
+                                                placeholder="Name"
+                                                value={formData.name}
                                                 onChange={handleChange}
                                                 required
                                             />
                                         </Form.Group>
                                     </Col>
-                                    <Col>
+                                    
+                                    {/* <Col>
                                         <Form.Group controlId="formLastName" className="mb-3">
                                             <Form.Control
                                                 type="text"
                                                 name="lastName"
-                                                placeholder="Last name"
+                                                placeholder="Last name (optional)"
                                                 value={formData.lastName}
                                                 onChange={handleChange}
-                                                required
+                                                
                                             />
                                         </Form.Group>
-                                    </Col>
+                                    </Col> */}
                                 </Row>
 
                                 <Form.Group controlId="formCompany" className="mb-3">
@@ -72,10 +82,10 @@ export default function Signup() {
                                     <Form.Control
                                         type="tel"
                                         name="phone"
-                                        placeholder="Phone number"
+                                        placeholder="Phone number (optional)"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        required
+                                        
                                     />
                                 </Form.Group>
 
@@ -106,7 +116,7 @@ export default function Signup() {
                                 </Button>
 
                                 <p className="text-center text-secondary mt-3">
-                                    Already have an account? <a href="/Login/Login">Login</a>
+                                    Already have an account? <a href="/ByggExp.se/login">Login</a>
                                 </p>
                             </Form>
                         </div>

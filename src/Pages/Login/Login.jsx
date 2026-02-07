@@ -6,10 +6,24 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
-        console.log('Logging in:', email, password);
-        // Здесь будет логика авторизации (Firebase или твой backend)
+
+        const res = await fetch('http://localhost:3000/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password }),
+        });
+
+        if (!res.ok) {
+            alert('Wrong email or password');
+            return;
+        }
+
+        const data = await res.json();
+        localStorage.setItem('access_token', data.access_token);
+
+        alert('Logged in');
     };
 
     return (
