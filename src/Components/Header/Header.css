@@ -236,6 +236,14 @@
     .tot-toggle {
         display: flex;
     }
+
+    .navbar .navbar-collapse {
+        display: none!important;
+    }
+
+    .custom-container {
+        max-width: 100%;
+    }
 }
 
 .tot-bars {
