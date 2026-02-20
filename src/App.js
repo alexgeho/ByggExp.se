@@ -7,7 +7,7 @@ import './css/App.css'
 
 function App() {
     return (
-        <Router basename="/ByggExp.se">
+        <Router>
             <Header />
             <Container style={{ marginTop: "80px" }}>
                 <AppRoutes />
