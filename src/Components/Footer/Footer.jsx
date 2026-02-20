@@ -25,7 +25,7 @@ const Footer = () => {
                 <hr className="footer-line" />
 
                 <div className="footer-bottom">
-                    <p>Copyright © 2024 FramerBite.</p>
+                    <p>Copyright © 2026 Gerhard's Corp</p>                    
                     <p>All Rights Reserved</p>
                 </div>
             </div>
