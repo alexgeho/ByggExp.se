@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Tab, Col, Nav, Container, Row} from "react-bootstrap";
 import first from "../assets/p1.png";
-import second from "../assets/p2.png";
 import third from "../assets/p3.png";
 import fourth from "../assets/p4.png";
 
